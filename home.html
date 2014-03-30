@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bingqing Huang</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bbq.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- easing.js is used for the second function for scolling -->
+  	
+  	<script type="text/javascript">
+	
+      $("document").ready(function(){
+      
+      $('#topnav').hide();
+      $('body').scrollspy({ target: '#topnav' })
+      $('body').attr('data-offset','400px') 
+      $('.carousel').carousel();
+/* to page scroll */
+          var $root = $('html, body');
+      $('#topnav a').click(function() {   
+          var href = $.attr(this, 'href');
+          $root.animate({
+              scrollTop: $(href).offset().top-75
+          }, 1000, function () {
+              window.location.hash = href;
+          });
+
+          return false;
+      });
+
+      $('#about a').click(function() {   
+          var href = $.attr(this, 'href');
+          $root.animate({
+              scrollTop: $(href).offset().top-75
+          }, 1000, function () {
+              window.location.hash = href;
+          });
+          $('#topnav').fadeIn();
+          $("#topnav ul li:eq(1)").class = "active";
+          return false;
+      });
+
+/* This function is used to make verticle page scroll  by easing.js */
+/*
+    $(function() {
+              $('#navbar-collapse-1 a').bind('click',function(event){
+              var $anchor = $(this);
+              $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top-76}, 1500,'easeInOutExpo');
+              event.preventDefault();
+                });
+            });
+*/
+
+});
+	
+	</script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="topnav">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Bingqing Huang</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="Resume_Bingqing_Huang.pdf">CV/Resume</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+<!--Home start ------------------------------------------------------------------------------------ -->
+
+<div class="jumbotron jumbotron-top" id="about">
+  <div class="container-fluid">
+  
+    <div class="col-md-4">
+    <img src="img/portrait.png" class="img-circle" alt="...">
+    </div>
+    
+    <div class="col-md-8 jumbo-description">
+      <h1>Hi, there!</h1>
+      <p>My name is Bingqing Huang.</p>
+      <p>I'm a 1st-year master candidate at University of Maryland at College Park. My major is Information Studies. I'm most interested in making nice websites and mobile apps.</p>
+      <p><a class="btn btn-primary btn-lg" role="button" href="#work">See my works</a></p>
+    </div>
+
+  </div>
+</div>
+<!-- home ends ------------------------------------------------------------------------------------ -->
+    
+    
+<!-- projects start ------------------------------------------------------------------------------ -->
+
+    <div id="work" class="container-fluid content-slice">
+      <div class="row">
+        <div class = "col-md-12 centered">
+          <h1>MY WORK</h1>
+          <BR>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="" data-toggle="modal" data-target="#myModal1">
+              <img src="img/SOlogo.gif" alt="...">
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="" data-toggle="modal" data-target="#myModal2">
+              <img src="img/IFlogo.gif" alt="...">
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="" data-toggle="modal" data-target="#myModal3">
+              <img src="img/BXlogo.png" alt="...">
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="" data-toggle="modal" data-target="#myModal4">
+              <img src="img/TClogo.png" alt="...">
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="" data-toggle="modal" data-target="#myModal5">
+              <img src="img/Siemenslogo.gif" alt="...">
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="" data-toggle="modal" data-target="#myModal6">
+              <img src="img/Rlogo.gif" alt="...">
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="" data-toggle="modal" data-target="#myModal7">
+              <img src="img/sufevlogo.jpg" alt="...">
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="" data-toggle="modal" data-target="#myModal8">
+              <img src="img/DissSuplogo.gif" alt="...">
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+<!-- projects end ------------------------------------------------------------------------------------ -->
+  
+<!-- contact start ------------------------------------------------------------------------------------ -->
+<div class="container-fluid content-slice" id="contact">
+  <div class="row">
+    <div class="col-md-12 centered">
+      <h1>CONTACT ME</h1>
+    </div>
+    <div class="col-md-12">
+          <p>I'm currently looking for summer internships. If you're interested in working with me, please get in touch using one of the methods below. Or feel free to just say hi. I like that too.</p>
+    </div>
+    <div class="col-md-6">
+          <p>Email</p>
+          <FORM method="post" action="mailto:noone@snai1mai1.com" enctype="text/plain">
+
+            <INPUT TYPE="text" NAME="email">
+
+            <INPUT TYPE="hidden" NAME="subject" VALUE="web_monitor">
+            <INPUT TYPE="text" NAME="subject">
+            <button type="submit">submit</button>
+
+
+          </FORM>
+    </div>
+    <div class="col-md-6">
+        <p>Contact List</p>
+          <p>Social Networks</p>
+    </div>
+    
+  </div>
+</div>
+<!-- contact end ------------------------------------------------------------------------------------ -->
+
+<!-- footer start ------------------------------------------------------------------------------------ -->
+<div class="footer">
+<div class="container-fluid">
+  <div class = "row">
+    <div class = "col-md-4">
+    </div>
+    <div class = "col-md-4">
+      <p>Feel free to get in touch with me through these awesome places.</p>
+      <a href="http://www.facebook.com"><i class="fa fa-facebook fa-3x"></i></a>
+      <a href="http://www.twitter.com"><i class="fa fa-twitter fa-3x"></i></a>
+      <a href="http://www.linkedin.com"><i class="fa fa-linkedin fa-3x"></i></a>
+      <a href="http://www.weibo.com"><i class="fa fa-weibo fa-3x"></i></a>
+    </div>
+    <div class = "col-md-4">
+    </div>
+  </div>
+</div>
+
+<!-- footer end ------------------------------------------------------------------------------------ -->
+
+<!-- Modal ------------------------------>
+<div id="myModal1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-proj">
+    <div class="modal-content maxheight">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Website Development <a href="http://www.successoptics.com">www.successoptics.com </a></h4>
+      </div>
+      <div class="modal-body">
+        <div class = "container-fluid">
+          <div class ="row">
+            <div class = "col-md-8 centered">
+      <!-- Carousel -------->
+        <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+          <ol class="carousel-indicators c-indicator">
+            <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel1" data-slide-to="1"></li>
+            <li data-target="#myCarousel1" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active largepadding">
+              <img src="img/SO1.gif" class="img-responsive centered" alt="Success Optics">
+              <div class="container">
+                <div class="carousel-caption c-caption">
+                  <p>Success Optics - Home Page</p>
+                </div>
+              </div>
+            </div>
+            <div class="item largepadding">
+              <img src="img/SO2.gif" class="img-responsive centered" alt="Success Optics Details">
+              <div class="container">
+                <div class="carousel-caption c-caption">
+                  <p>Success Optics - News Page</p>
+                </div>
+              </div>
+            </div>  
+            <div class="item largepadding">
+              <img src="img/SO3.gif" class="img-responsive centered" alt="Success Optics News">
+              <div class="container">
+                <div class="carousel-caption c-caption">
+                  <p>Success Optics - Component Page</p>
+                </div>
+              </div>
+            </div> 
+          </div> 
+          <a class="left slide-control-left" href="#myCarousel1" data-slide="prev"><h1><span class="glyphicon glyphicon-chevron-left"></span></h1></a>
+          <a class="right slide-control-right" href="#myCarousel1" data-slide="next"><h1><span class="glyphicon glyphicon-chevron-right"></span></h1></a>
+        </div>
+        <!-- Carousel End -------->
+      </div>
+
+      <div class="col-md-4">
+        <p><b>PROJECT DESCRIPTION</b></p>
+        <p>Overview: This project is to make a new intro website for a small company, which produces precision optics. With this website, the company is able to show its products and services online and give reference to the exhibitions it attends. The website also contributes to the visibility of the company, which may lead to further profits.</p>
+        <p>Tags: <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+          </p>
+        <p><b>ROLES AND RESPONSIBILITES</b></p>
+        <p><b>Website Designer</b>: Designed all the features of the website according to the company's demand. And frequently discussed design details with related employees of the company.  </p>
+        <p><b>Website Developer</b>: Developed the website by HTML, CSS and JavaScript.</p>
+        <p><b>Website Deployer</b>: Upload the website to GoDaddy's server and published it under current domain name.</p>
+      </div>
+    </div>
+  </div>
+      </div>
+      <div class="modal-footer modal-footer-proj">
+          
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="myModal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-proj">
+    <div class="modal-content maxheight">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Website Development : IFSCM</h4>
+      </div>
+      <div class="modal-body">
+        <div class = "container-fluid">
+          <div class ="row">
+            <div class = "col-md-8 centered">
+      <!-- Carousel -------->
+        <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+          <ol class="carousel-indicators c-indicator">
+            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel2" data-slide-to="1"></li>
+            <li data-target="#myCarousel2" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/IF1.png" class="img-responsive centered" alt="...">
+              <div class="container">
+                <div class="carousel-caption c-caption">
+                  <p>IFSCM - Login Page</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/IF2.png" class="img-responsive centered" alt="...">
+              <div class="container">
+                <div class="carousel-caption c-caption">
+                  <p>IFSCM - Order Page</p>
+                </div>
+              </div>
+            </div>  
+            <div class="item">
+              <img src="img/IF3.png" class="img-responsive centered" alt="...">
+              <div class="container">
+                <div class="carousel-caption c-caption">
+                  <p>IFSCM - Prediction Page</p>
+                </div>
+              </div>
+            </div> 
+          </div> 
+          <a class="left slide-control-left" href="#myCarousel2" data-slide="prev"><h1><span class="glyphicon glyphicon-chevron-left"></span></h1></a>
+          <a class="right slide-control-right" href="#myCarousel2" data-slide="next"><h1><span class="glyphicon glyphicon-chevron-right"></span></h1></a>
+        </div>
+        <!-- Carousel End -------->
+      </div>
+
+      <div class="col-md-4">
+        <p><b>PROJECT DESCRIPTION</b></p>
+        <p>Overview: This project is one of the main projects of Brilliantech in 2012. It is aimed to provide an interactive supply chain management system for the company's client. The system should cover all the requests the clients mentioned in the Letter of Intent, including order module, prediction, parts scanning, etc. The system is now running properly. </p>
+        <p>Tags: <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+          </p>
+        <p><b>ROLES AND RESPONSIBILITES</b></p>
+        <p><b>Website Designer</b>: Actively participated in the design cycle of the system. Worked together with the senior designer and share ideas with other team members.</p>
+        <p><b>Website Developer</b>: Developed the website by HTML, CSS and JavaScript. And worked together with back-end developers to add APIs from ruby on rails to the website linking data to the website.</p>
+      </div>
+    </div>
+  </div>
+      </div>
+      <div class="modal-footer modal-footer-proj">
+          
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="myModal3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-proj">
+    <div class="modal-content maxheight">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Website Development : BrilliantX</h4>
+      </div>
+      <div class="modal-body">
+        <div class = "container-fluid">
+          <div class ="row">
+            <div class = "col-md-8 centered">
+      <!-- Carousel -------->
+        <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+          <ol class="carousel-indicators c-indicator">
+            <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel3" data-slide-to="1"></li>
+            <li data-target="#myCarousel3" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/BX1.png" class="img-responsive centered" alt="...">
+              <div class="container">
+                <div class="carousel-caption c-caption">
+                  <p>BrilliantX - Home Page</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/BX2.png" class="img-responsive centered" alt="...">
+              <div class="container">
+                <div class="carousel-caption c-caption">
+                  <p>BrilliantX - Product Page</p>
+                </div>
+              </div>
+            </div>  
+            <div class="item">
+              <img src="img/BX3.png" class="img-responsive centered" alt="...">
+              <div class="container">
+                <div class="carousel-caption c-caption">
+                  <p>BrilliantX - News Page</p>
+                </div>
+              </div>
+            </div> 
+          </div> 
+          <a class="left slide-control-left" href="#myCarousel3" data-slide="prev"><h1><span class="glyphicon glyphicon-chevron-left"></span></h1></a>
+          <a class="right slide-control-right" href="#myCarousel3" data-slide="next"><h1><span class="glyphicon glyphicon-chevron-right"></span></h1></a>
+        </div>
+        <!-- Carousel End -------->
+      </div>
+
+      <div class="col-md-4">
+        <p><b>PROJECT DESCRIPTION</b></p>
+        <p>Overview: This project is aimed at building an administrative system, which improves internal control effectiveness. With the combination of message module and customized calender, the system should be able to support both intersectoral communications and the employee's self time management.</p>
+        <p>Tags: <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+          </p>
+        <p><b>ROLES AND RESPONSIBILITES</b></p>
+        <p><b>UI Designer</b>: Designed the user interface of the system according to user friendly principles and previous system themes.</p>
+        <p><b>System Developer</b>: Developed the front-end of the system by HTML, CSS and JavaScript.  </p>
+      </div>
+    </div>
+  </div>
+      </div>
+      <div class="modal-footer modal-footer-proj">
+          
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="myModal7" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-proj">
+    <div class="modal-content maxheight">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Website Development - <b>SHUFE Volunteers</b></h4>
+      </div>
+      <div class="modal-body">
+        <div class = "container-fluid">
+          <div class ="row">
+            <div class = "col-md-8 centered">
+              <img src="img/Sufevindex.jpg" class="img-responsive centered" alt="...">
+            </div> 
+            <div class="col-md-4">
+              <p><b>PROJECT DESCRIPTION</b></p>
+              <p>Overview: The project is to build an online system managing and supporting the volunteer teams in Shanghai University of Finance and Economics. The system acted as a communication platform for the volunteers to spread their words and activities around the university.</p>
+              <p>Tags: <span class="badge">HTML</span><span class="badge">.NET</span><span class="badge">C#</span><span class="badge">SQL</span><span class="badge">IIS</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+                </p>
+              <p><b>ROLES AND RESPONSIBILITES</b></p>
+              <p><b>Website Designer</b>: Designed the main features of the website.</p>
+              <p><b>Website Developer</b>: Developed the website using .NET Framework 3.5 and MS SQL Server 2005.</p>
+              <p><b>Website Deployer</b>: Installed required environment on the university's server and ensure the proper running of the website.</p>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>   
+  </div>
+      </div>
+      <div class="modal-footer modal-footer-proj">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="myModal8" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-proj">
+    <div class="modal-content maxheight">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Website Development <a>Dissertation Support System</a></h4>
+      </div>
+      <div class="modal-body centered">
+              <img src="img/DissSupdetails.gif" class="img-responsive centered" alt="Intelligent Factory">
+      </div>
+      <div class="modal-footer modal-footer-proj">
+          <p>Tags: <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">Javascript</span><span class="badge">C#</span><span class="badge">SQL</span><span class="badge">IIS</span><span class="badge">.NET</span>
+          </p>
+      </div> 
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>

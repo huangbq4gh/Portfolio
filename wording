@@ -1,0 +1,43 @@
+Success Optics
+Overview: This project is to make a new intro website for a small company, which produces precision optics. With this website, the company is able to show its products and services online and give reference to the exhibitions it attends. The website also contributes to the visibility of the company, which may lead to further profits.
+Tags: HTML, CSS, JavaScript
+Roles and Responsibilities: 
+Website Designer: Designed all the features of the website according to the company's demand. And frequently discussed design details with related employees of the company.  
+Website Developer: Developed the website by HTML, CSS and JavaScript.
+Website Deployer: Upload the website to Godaddy's server and published it under current domain name.
+
+IFSCM
+Overview: This project is one of the main projects of Brilliantech in 2012. It is aimed to provide an interactive supply chain management system for the company's client. The system should cover all the requests the clients mentioned in the Letter of Intent, including order module, prediction, parts scanning, etc. The system is now running properly. 
+Tags: HTML, CSS, JavaScript
+Roles and Responsibilities:
+Website Designer: Actively participated in the design cycle of the system. Worked together with the senior designer and share ideas with other team members.
+Website Developer: Developed the website by HTML, CSS and JavaScript. And worked together with back-end developers to add APIs from ruby on rails to the website linking data to the website.
+
+BrilliantX
+Overview: This project is aimed at building an administrative system, which improves internal control effectiveness. With the combination of message module and customized calender, the system should be able to support both intersectoral communications and the employee's self time management.
+Tags: HTML, CSS, JavaScript
+Roles and Responsibilities:
+UI Designer: Designed the user interface of the system according to user friendly principles and previous system themes.
+System Developer: Developed the front-end of the system by HTML, CSS and JavaScript. 
+
+SIEMENS
+Overview: The project is about design and development of an iOS application for SIEMENS APT. The app should give user a clear view of the products and services of the company.
+Tags: iPhone, Cocoa Touch, Objective-C
+Roles and Responsibilities:
+App Designer: Designed the user interface of the app based on user friendly principles and the core values of the company.
+App Developer: Developing the app on xCode.
+
+SHUFE Volunteers
+Overview: The project is to build an online system managing and supporting the volunteer teams in Shanghai University of Finance and Economics. The system acted as a communication platform for the volunteers to spread their words and activities around the university. 
+Tags: .NET, C#, CSS, JavaScript, SQL
+Roles and Responsibilities:
+Website Designer: Designed the main features of the website.
+Website Developer: Developed the website using .NET Framework 3.5 and MS SQL Server 2005.
+Website Deployer: Installed required environment on the university's server and ensure the proper running of the website.
+
+Dissertation SUP
+Overview: The project is to provide a supporting system for college students' dissertation activities. The system gives convenience for the students to discuss with their tutor over certain topics. It also give a convenience way of scoring the dissertation process.
+Tags: .NET, C#, CSS, JavaScript, SQL
+Roles and Responsibilities:
+Website Designer: Designed the features as well as the user interface of the website.
+Website Developer: Developed the website using .NET Framework 3.5 and MS SQL Server 2005.
