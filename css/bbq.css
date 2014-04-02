@@ -1,6 +1,7 @@
 .jumbotron-top{
 	height: 100%;
 	padding-top: 150px;
+	
 }
 
 .footer{
@@ -77,8 +78,8 @@ html,body{
 	bottom:12%;
 }
 
-body{
-	background: url('img/bg1.jpg')
+html,body{
+	background-image: url('img/bg1.jpg');
 	background-repeat:  repeat;
 	
 }
