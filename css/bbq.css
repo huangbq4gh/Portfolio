@@ -101,3 +101,9 @@ html,body{
 	opacity:1;
 }
 
+li
+{
+	margin-left: 0;
+	padding-left: 0;
+	list-style-image: url('listicon.gif');
+}
